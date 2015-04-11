@@ -5,6 +5,10 @@
   "main": "app.js",
   "dependencies": {
     "express": "^4.12.3",
+    "jade": "*",
+    "lodash": "^3.6.0",
+    "mandrill-api": "^1.0.41",
+    "twitter": "^1.2.5",
     "jade":"*",
     "bootstrap":"*"
   }

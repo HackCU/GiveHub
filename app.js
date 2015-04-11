@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+// var bitcoin = require('./controllers/bitcoin');
 
 // use jade as the view engine
 app.set('view engine', 'jade');
@@ -10,6 +11,21 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function (req, res) {
   res.render('index.jade')
 });
+
+app.get('/twitter', function(req,res){
+    var stream = require('./controllers/twitter')();
+});
+
+app.get('/sendEmail', function(req, res){
+    var email = require('./controllers/mandrill')(req, res);
+})
+
+/*
+app.get('/sendTxn/:from/:to', function(req, res){
+    bitcoin.sendTxn(req,res);
+});
+*/
+
 
 app.set('port', (process.env.PORT || 3000))
 

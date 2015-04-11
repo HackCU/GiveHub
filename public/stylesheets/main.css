@@ -23,11 +23,31 @@ h4 {
 	font-family: 'Jura', sans-serif;
 	font-weight: 400;
 	opacity: 0.6;
-	margin-top: 50px;
+	margin-top: 9px;
 	position: center;
 }
 
-.btn-primary {
-	opacity: 0.4;
+.btn-default {
+	margin-top: 90px;
+}
+
+
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
+.btn-default.outline {
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+.btn-default.outline:hover, .btn-default.outline:focus, .btn-default.outline:active, .btn-default.outline.active, .open > .dropdown-toggle.btn-default {
+    color: #FFF;
+    border-color: #FFF;
+    background: rgba(255, 255, 255, 0.2);
+}
+.btn-default.outline:active, .btn-default.outline.active {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
 }
 /*# sourceMappingURL=main.css.map */

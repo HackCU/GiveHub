@@ -21,8 +21,8 @@ app.get('/createOrganization', function(req, res){
 app.get('/braintree', function(req, res){
   res.render('braintree.jade',
     {
-      "organization" : "Example Company",
-      "amount" : "$10"
+      "organization" : req.query.handle || "Example",
+      "amount" : req.query.amount || "$10"
     }
   );
 });

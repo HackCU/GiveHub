@@ -98,14 +98,44 @@ p{
     border: 2px solid #FFF;
     color: #FFF;
 }
-.btn-default.outline:hover, .btn-default.outline:focus, .btn-default.outline:active, .btn-default.outline.active, .open > .dropdown-toggle.btn-default {
+.btn-default.outline:hover, .btn-default.outline:focus, .btn-default.outline:active, .btn-default.outline.active, .open > .dropdown-toggle.btn-default  {
     color: #FFF;
     border-color: #FFF;
     background: rgba(255, 255, 255, 0.2);
 }
-.btn-default.outline:active, .btn-default.outline.active {
+.btn-default.outline:active, .btn-default.outline.active  {
     border-color: #007299;
     color: #007299;
     box-shadow: none;
 }
-/*# sourceMappingURL=main.css.map */
+.input-orgForm{
+	height:50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    margin-top: 9px;
+     
+}
+.input-orgDesc{
+	margin-top:9px;
+	font-size:18px;
+}
+/*this is to keep a spinner off of the end of number type inputs*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.btn-orgForm{
+	margin-top: 9px;
+	border: 2px solid #FFF;
+    color: #FFF;
+}
+
+
+/*
+
+# sourceMappingURL=main.css.map 
+
+*/

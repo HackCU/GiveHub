@@ -57,6 +57,10 @@ p{
 	margin-top: 9px;
 	position: center;
 }
+.image{
+	width: 100px;
+	height: 100px;
+}
 .curved-border
 {
 	-moz-border-radius: 6px;

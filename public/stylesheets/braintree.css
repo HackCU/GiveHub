@@ -1,0 +1,12 @@
+#header {
+  color: white;
+  text-align: center;
+}
+
+body.inline-frame#container {
+  opacity: .5 !important;
+}
+
+#dropin {
+  opacity: .8;
+}

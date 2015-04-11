@@ -14,7 +14,16 @@ app.get('/', function (req, res) {
 
 app.get('/createOrganization', function(req, res){
   res.render('createOrg.jade');
-})
+});
+
+app.get('/braintree', function(req, res){
+  res.render('braintree.jade',
+    {
+      "organization" : req.query.handle || "Example",
+      "amount" : req.query.amount || "$10"
+    }
+  );
+});
 
 
 app.get('/twitter', function(req,res){

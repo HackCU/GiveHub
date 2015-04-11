@@ -57,21 +57,25 @@ p{
 	margin-top: 9px;
 	position: center;
 }
-.image{
-	width: 100px;
-	height: 100px;
+p.black{
+	color: black;
+	margin-left: 15px;
+	margin-right: 15px;
 }
+
 .curved-border
 {
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
-	border-color: rgba(255, 255, 255, 1);
+	border-color: rgba(190, 190, 190, 0.9);
 	border-style: solid;
+	width: 100%;
+	height: 300px
 }
 
 .table {
-	background-color: rgba(190, 190, 190, 0.9);
+	background-color: rgba(190, 190, 190, 0.6);
 }
 .container-fluid{
 	margin-left: 0px;
@@ -81,7 +85,7 @@ p{
 }
 .organization-container {
 	margin-top: 300px;
-	background-color: rgba(240, 240, 240, 0.3);
+	background-color: rgba(240, 240, 240, 0.5);
 }
 .organization-list {
 	background-image: url('/images/org_img.jpg');

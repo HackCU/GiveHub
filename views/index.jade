@@ -19,7 +19,7 @@ block content
                 div(class="col-md-4")
                     div(class="curved-border")
                         img(src="/images/charity1.jpg",alt="#obeyTheVADG",style="float:left; margin: 10px 15px 15px 10px; height: 100px; width: 100px;")
-                        h3 #obeyTheVADG
+                        h3 World Wide Fund
                         p.black "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 div(class="col-md-4") 
                     div(class="curved-border")
@@ -33,28 +33,28 @@ block content
                         p.black "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             h2 Organizations
 
-    div(class="container-fluid organization-list") 
-        table.table.table-hover
-            thead
-                tr
-                    th Name 
-                    th Description
-                    th Twitter Handle
-                    th Email
-                    th Phone #
-                    th Website
-
-            tbody
-            each item in orgs
-                tr
-                    td= item.name
-                    td= item.description
-                    td= item.handle
-                    td= item.email
-                    td= item.phone
-                    td
-                        a(href=item.website)
-                            = item.website
+    div(class="container-fluid organization-list")
+        div(style="overflow: auto;height: 700px; width: 100%;")
+            table.table.table-hover
+                thead
+                    tr
+                        th Name 
+                        th Description
+                        th Twitter Handle
+                        th Email
+                        th Phone #
+                        th Website
+                tbody
+                each item in orgs
+                    tr
+                        td= item.name
+                        td= item.description
+                        td= item.handle
+                        td= item.email
+                        td= item.phone
+                        td
+                            a(href=item.website)
+                                = item.website
 
 
 

@@ -25,7 +25,7 @@ h2 {
 	font-weight: 600;
 	font-size: 60px;
 	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	position: center;
 	opacity: 0.8;
 }
@@ -63,6 +63,14 @@ p.black{
 	margin-right: 15px;
 }
 
+tbody {
+    /*display:inline-block;*/
+    /*overflow:auto;*/
+    /*height: 800px;*/
+    /*width: 100%;*/
+}
+
+
 .curved-border
 {
 	-moz-border-radius: 6px;
@@ -75,9 +83,10 @@ p.black{
 }
 
 .table {
-	background-color: rgba(20, 20, 20, 0.3);
-	color: #FFF;
+	background-color: rgba(190, 190, 190, 0.6);
+	color: black;
 }
+
 .container-fluid{
 	margin-left: 0px;
 	margin-right: 0px;
@@ -93,11 +102,11 @@ p.black{
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-position: bottom;
 }
 .btn-default {
 	margin-top: 90px;
 }
-
 
 .btn.outline {
     background: none;

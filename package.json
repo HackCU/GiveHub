@@ -6,6 +6,7 @@
   "dependencies": {
     "express": "^4.12.3",
     "jade": "*",
+    "lodash": "^3.6.0",
     "twitter": "^1.2.5"
   }
 }

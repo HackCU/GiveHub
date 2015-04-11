@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-
+var bitcoin = require('./controllers/bitcoin');
 
 app.get('/', function (req, res) {
   res.send('Hello World!');
@@ -8,6 +8,10 @@ app.get('/', function (req, res) {
 
 app.get('/twitter', function(req,res){
     var stream = require('./controllers/twitter')();
+});
+
+app.get('/sendTxn/:from/:to', function(req, res){
+    bitcoin.sendTxn(req,res);
 });
 
 

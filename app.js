@@ -12,6 +12,11 @@ app.get('/', function (req, res) {
   res.render('index.jade')
 });
 
+app.get('/createOrganization', function(req, res){
+  res.render('createOrg.jade');
+})
+
+
 app.get('/twitter', function(req,res){
     var stream = require('./controllers/twitter')();
 });

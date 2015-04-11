@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var config = require('./config.json');
+var orgs = require('./data/orgs.json')
 
 if (config.twitter.stream){
   var stream = require('./controllers/twitter')();
@@ -15,7 +16,9 @@ app.set('view engine', 'jade');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
-  res.render('index.jade')
+  res.render('index.jade', {
+    orgs: orgs
+  })
 });
 
 app.get('/createOrganization', function(req, res){

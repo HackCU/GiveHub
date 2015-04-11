@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 // var bitcoin = require('./controllers/bitcoin');
-
+var orgs = require('./data/orgs.json')
 // use jade as the view engine
 app.set('view engine', 'jade');
 
@@ -9,7 +9,9 @@ app.set('view engine', 'jade');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
-  res.render('index.jade')
+  res.render('index.jade', {
+    orgs: orgs
+  })
 });
 
 app.get('/createOrganization', function(req, res){

@@ -1,8 +1,9 @@
 body {
-	margin: 10px;
+	margin: 0px;
 	background-image: url('/images/background_img.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 
 	font-family: 'Jura', sans-serif;
 }
@@ -17,6 +18,26 @@ h1 {
 	position: center;
 }
 
+h2 {
+	color: #162B55;
+	text-align: center;
+	font-family: 'Jura', sans-serif;
+	font-weight: 600;
+	font-size: 60px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	position: center;
+	opacity: 0.8;
+}
+
+h3 {
+	color: black;
+	text-align: center;
+	font-family: 'Jura', sans-serif;
+	font-weight: 400;
+
+}
+
 h4 {
 	color: #FFF;
 	text-align: center;
@@ -27,6 +48,43 @@ h4 {
 	position: center;
 }
 
+p{
+	color: #FFF;
+	text-align: center;
+	font-family: 'Jura', sans-serif;
+	font-weight: 400;
+	opacity: 0.8;
+	margin-top: 9px;
+	position: center;
+}
+.curved-border
+{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border-color: rgba(255, 255, 255, 1);
+	border-style: solid;
+}
+
+.table {
+	background-color: rgba(190, 190, 190, 0.9);
+}
+.container-fluid{
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.organization-container {
+	margin-top: 300px;
+	background-color: rgba(240, 240, 240, 0.3);
+}
+.organization-list {
+	background-image: url('/images/org_img.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 .btn-default {
 	margin-top: 90px;
 }

@@ -2,13 +2,55 @@ extends layout.jade
 
 block content
 
-    div(class="container-fluid")
+    div(class="container")
         div(class="row")
-            div(class="col-md-4 col-md-offset-4")
-                button(type="submit",class="btn btn-default btn-lg btn-block outline") I want to give money
+            div(class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3")
+                a(href="#organizations",role="button",class="btn btn-default btn-lg btn-block outline") I want to give money
             
         div(class="row")
-            div(class="col-md-4 col-md-offset-4")
-                button(type="submit",class="btn btn-default btn-lg btn-block outline") I want to raise money
+            div(class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3")
+                a(href="/createOrganization",role="button",class="btn btn-default btn-lg btn-block outline") I want to raise money
+
+
+    div(class="container-fluid organization-container",id="organizations") 
+        div(class="container")
+            h2 Featured Charities
+            div(class="row")
+                div(class="col-md-4")
+                    div(class="curved-border")
+                        img(src="/images/charity1.jpg",alt="#obeyTheVADG",style="width:100px;height:100px")
+                        h3 #VADG
+                div(class="col-md-4") 
+                    h3 Second Charity
+                div(class="col-md-4") 
+                    h3 Third Charity
+            h2 Organizations
+
+    div(class="container-fluid organization-list") 
+        table.table.table-striped
+            thead
+                tr
+                    th Name 
+                    th Description
+                    th Twitter Handle
+                    th Email
+                    th Phone #
+                    th Website
+
+            tbody
+            each item in orgs
+                tr
+                    td= item.name
+                    td= item.description
+                    td= item.handle
+                    td= item.email
+                    td= item.phone
+                    td
+                        a(href=item.website)
+                            = item.website
+
+
+
+    
         
     

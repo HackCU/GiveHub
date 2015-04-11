@@ -1,0 +1,9 @@
+{
+  "name": "foo",
+  "version": "1.1.1",
+  "description": "Charity",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}

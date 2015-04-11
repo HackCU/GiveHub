@@ -1,0 +1,8 @@
+{
+  "deploy" : {
+    "url" : "localhost:3000"
+  },
+  "twitter" : {
+    "stream" : false
+  }
+}

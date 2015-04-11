@@ -134,6 +134,16 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 80px;
 }
 
+.btn-orgForm.outline:hover, .btn-orgForm.outline:focus, .btn-orgForm.outline:active, .btn-orgForm.outline.active, .open > .dropdown-toggle.btn-default  {
+    color: #FFF;
+    border-color: #FFF;
+    background: rgba(255, 255, 255, 0.2);
+}
+.btn-orgForm.outline:active, .btn-orgForm.outline.active  {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
+}
 
 /*
 

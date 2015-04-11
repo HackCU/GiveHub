@@ -75,7 +75,8 @@ p.black{
 }
 
 .table {
-	background-color: rgba(190, 190, 190, 0.6);
+	background-color: rgba(20, 20, 20, 0.3);
+	color: #FFF;
 }
 .container-fluid{
 	margin-left: 0px;

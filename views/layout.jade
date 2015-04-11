@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+    head        
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+        meta(name='viewport', content='width=device-width')     
+        link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Raleway:400,700,400')
+        script(src="//code.jquery.com/jquery-1.11.1.min.js")
+        link(rel='stylesheet', href='/stylesheets/bootstrap-theme.css.map')
+        link(rel='stylesheet', href='/stylesheets/bootstrap-theme.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap.css.map')
+        link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+        link(rel='stylesheet', href='/stylesheets/main.css')
+        script(type="text/javascript",src="js/bootstrap.js")
+        link(href='http://fonts.googleapis.com/css?family=Jura:400,600',rel='stylesheet',type='text/css')
+
+
+        div.container
+            h1 FoCoFoSho
+            h4 A simple twitter integration tool for moving money to the causes most important to you.
+            include navbar
+
+    body
+
+        div#content
+          div.container
+            block content

@@ -2,8 +2,14 @@ var express = require('express');
 var app = express();
 // var bitcoin = require('./controllers/bitcoin');
 
+// use jade as the view engine
+app.set('view engine', 'jade');
+
+// set where the static contents are (e.g., css, js)
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+  res.render('index.jade')
 });
 
 app.get('/twitter', function(req,res){
@@ -21,11 +27,11 @@ app.get('/sendTxn/:from/:to', function(req, res){
 */
 
 
-var server = app.listen(3000, function () {
+app.set('port', (process.env.PORT || 3000))
 
-  var host = server.address().address;
-  var port = server.address().port;
+var server = app.listen(app.get('port'), function() {
 
-  console.log('Example app listening at http://%s:%s', host, port);
-
-});
+    var host = server.address().address
+    var port = server.address().port
+    console.log('App listening at http://%s:%s', host, port)
+})

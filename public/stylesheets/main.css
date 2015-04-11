@@ -1,4 +1,33 @@
-.body {
-  margin: 10px; }
+body {
+	margin: 10px;
+	background-image: url('/images/background_img.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
 
+	font-family: 'Jura', sans-serif;
+}
+
+h1 {
+	color: #FFF;
+	text-align: center;
+	font-family: 'Jura', sans-serif;
+	font-weight: 600;
+	font-size: 80px;
+	margin-top: 200px;
+	position: center;
+}
+
+h4 {
+	color: #FFF;
+	text-align: center;
+	font-family: 'Jura', sans-serif;
+	font-weight: 400;
+	opacity: 0.6;
+	margin-top: 50px;
+	position: center;
+}
+
+.btn-primary {
+	opacity: 0.4;
+}
 /*# sourceMappingURL=main.css.map */

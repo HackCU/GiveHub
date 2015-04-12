@@ -14,37 +14,37 @@ var stream = function(){
 
     console.log('Twitter initialized and listening');
 
-    //client.stream('statuses/filter', {track: '#GivingWithGiveHub'}, function(stream) {
-    //    /* All data for our app */
-    //  stream.on('data', function(app_tweet) {
-    //      addToUI(app_tweet);
-    //    /* Watch single user for orgs handle*/
-    //
-    //    /* TODO: make user matter */
-    //    _.forEach(orgs, function(org) {
-    //      if ( app_tweet.text.search( org.handle ) != -1 ) {
-    //        /* Contains handle of relevant org */
-    //        console.log( 'contains relevant org info' );
-    //        var tweet = app_tweet;
-    //        var amount = nlpDollars( tweet.text );
-    //        console.log( tweet.user.screen_name + ' tweeted: ' + tweet.text + ' with donation of ' + amount );
-    //        /* Do stuff with this tweet */
-    //        tweetBack( tweet.user.screen_name, org.handle, amount );
-    //
-    //      }
-    //      else {
-    //        console.log( 'correct hashtag but this org does not match' );
-    //      }
-    //    })
-    //  });
-    //
-    //  stream.on('error', function(error) {
-    //    console.log(error);
-    //    console.log('Twitter no longer being filtered.');
-    //    //stream.close();
-    //    return;
-    //  });
-    //});
+    client.stream('statuses/filter', {track: '#GivingWithGiveHub'}, function(stream) {
+        /* All data for our app */
+      stream.on('data', function(app_tweet) {
+          addToUI(app_tweet);
+        /* Watch single user for orgs handle*/
+
+        /* TODO: make user matter */
+        _.forEach(orgs, function(org) {
+          if ( app_tweet.text.search( org.handle ) != -1 ) {
+            /* Contains handle of relevant org */
+            console.log( 'contains relevant org info' );
+            var tweet = app_tweet;
+            var amount = nlpDollars( tweet.text );
+            console.log( tweet.user.screen_name + ' tweeted: ' + tweet.text + ' with donation of ' + amount );
+            /* Do stuff with this tweet */
+            tweetBack( tweet.user.screen_name, org.handle, amount );
+
+          }
+          else {
+            console.log( 'correct hashtag but this org does not match' );
+          }
+        })
+      });
+
+      stream.on('error', function(error) {
+        console.log(error);
+        console.log('Twitter no longer being filtered.');
+        //stream.close();
+        return;
+      });
+    });
 
     function addToUI(tweet){
         /* Add tweet to ui because it has our hashtag */
@@ -89,9 +89,9 @@ var stream = function(){
     function shortenURL(url, cb){
       var rest = require('restler');
 
-      url = encodeURI(url);
+      //url = encodeURI(url);
       console.log(url);
-      rest.get("https://api-ssl.bitly.com/v3/shorten?access_token=b3faf3c5612c590fa8017c870050bdbedb31dbc1&longUrl=" + url ).on('complete', function(data){
+      rest.get("https://api-ssl.bitly.com/v3/shorten?access_token=b3faf3c5612c590fa8017c870050bdbedb31dbc1&longUrl=" + encodeURIComponent(url) ).on('complete', function(data){
         //if (err) {
         //  console.log('err');
         //  console.log(JSON.stringify(err));
@@ -107,8 +107,6 @@ var stream = function(){
 
       });
     }
-
-
-}
+};
 
 module.exports = stream;

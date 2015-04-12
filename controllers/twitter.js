@@ -70,14 +70,16 @@ var stream = function(){
 
     function tweetBack(userScreenName, orgHandle, amount){
       if(!userScreenName || !orgHandle) return 1;
-      var url = shortenURL(buildURL(orgHandle, amount));
-      var status =  "Thanks for donating to @" + orgHandle + ", @" + userScreenName + ".  Please visit: " + url;
+      shortenURL(buildURL(orgHandle, amount), function(url){
+        var status =  "Thanks for donating " + amount + " to @" + orgHandle + ", @" + userScreenName + ".  Please visit: " + url;
 
-      client.post('statuses/update', {status: status},  function(error, tweet, response){
-        if(error) throw JSON.stringify(error);
-        console.log("successfully tweeted back.");
-        return;
+        client.post('statuses/update', {status: status},  function(error, tweet, response){
+          if(error) throw JSON.stringify(error);
+          console.log("successfully tweeted back.");
+          return;
+        });
       });
+
     }
 
     function buildURL(orgHandle, amount){

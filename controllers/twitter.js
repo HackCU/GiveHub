@@ -88,13 +88,15 @@ var stream = function(){
       var rest = require('restler');
 
       url = encodeURI(url);
+      console.log('ENCODED URL');
+      console.log(url);
       rest.get("https://api-ssl.bitly.com/v3/shorten?access_token=b3faf3c5612c590fa8017c870050bdbedb31dbc1&longUrl=" + url, function(err, data){
         if (err) {
-          console.log(err);
+          console.log(JSON.stringify(err));
           cb(url);
           return;
         } else {
-          console.log(data);
+          console.log(JSON.stringify(data));
           var shortened = data.data.url;
           cb(shortened);
           return;

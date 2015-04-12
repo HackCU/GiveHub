@@ -1,8 +1,8 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 var app = express();
 var config = require('./config.json');
-var orgs = require('./data/orgs.json')
-
+var orgs = require('./data/orgs.json');
 if (config.twitter.stream){
   var stream = require('./controllers/twitter')();
 } else {
@@ -14,6 +14,7 @@ app.set('view engine', 'jade');
 
 // set where the static contents are (e.g., css, js)
 app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
   res.render('index.jade', {
@@ -28,8 +29,8 @@ app.get('/createOrganization', function(req, res){
 app.get('/donate', function(req, res){
   res.render('donate.jade',
     {
-      "organization" : req.query.handle || "Example",
-      "amount" : req.query.amount || "$10"
+      "organization" : req.query.handle,
+      "amount" : req.query.amount
     }
   );
 });
@@ -39,6 +40,13 @@ app.get('/sendEmail', function(req, res){
 })
 
 
+
+app.post('/newOrganization', function(req, res){
+  //var name = req.body.name;
+  console.log(req.body);
+  res.redirect('/');
+});
+
 app.set('port', (process.env.PORT || 3000))
 
 var server = app.listen(app.get('port'), function() {
@@ -47,3 +55,4 @@ var server = app.listen(app.get('port'), function() {
     var port = server.address().port
     console.log('App listening at http://%s:%s', host, port)
 })
+

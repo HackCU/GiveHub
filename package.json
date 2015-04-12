@@ -4,12 +4,14 @@
   "description": "Charity",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.12.2",
     "bootstrap": "*",
     "braintree": "^1.23.0",
     "express": "^4.12.3",
     "jade": "*",
     "lodash": "^3.6.0",
     "mandrill-api": "^1.0.41",
+    "restler": "^3.2.2",
     "twitter": "^1.2.5"
   }
 }

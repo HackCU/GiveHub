@@ -76,6 +76,10 @@ p.black{
 	margin-right: 15px;
 }
 
+.payment-shift {
+	padding-left: 100px;
+}
+
 .curved-border
 {
 	-moz-border-radius: 6px;

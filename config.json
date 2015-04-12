@@ -1,6 +1,6 @@
 {
   "deploy" : {
-    "url" : "localhost:3000"
+    "url" : "http://givehub.herokuapp.com"
   },
   "twitter" : {
     "stream" : false

@@ -1,13 +1,12 @@
 var express = require('express');
 var app = express();
 var config = require('./config.json');
-var orgs = require('./data/orgs.json')
-
-/*if (config.twitter.stream){
+var orgs = require('./data/orgs.json');
+if (config.twitter.stream){
   var stream = require('./controllers/twitter')();
 } else {
   console.log('Twitter not being run on server');
-}*/
+}
 
 // use jade as the view engine
 app.set('view engine', 'jade');
@@ -28,8 +27,8 @@ app.get('/createOrganization', function(req, res){
 app.get('/donate', function(req, res){
   res.render('donate.jade',
     {
-      "organization" : req.query.handle || "Example",
-      "amount" : req.query.amount || "$10"
+      "organization" : req.query.handle,
+      "amount" : req.query.amount
     }
   );
 });
@@ -39,6 +38,13 @@ app.get('/sendEmail', function(req, res){
 })
 
 
+
+app.post('/newOrganization', function(req, res){
+  //var name = req.body.name;
+  console.log(req.body);
+  res.redirect('/');
+});
+
 app.set('port', (process.env.PORT || 3000))
 
 var server = app.listen(app.get('port'), function() {
@@ -47,3 +53,4 @@ var server = app.listen(app.get('port'), function() {
     var port = server.address().port
     console.log('App listening at http://%s:%s', host, port)
 })
+

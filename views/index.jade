@@ -50,18 +50,20 @@ block content
                             th Twitter Handle
                             th Email
                             th Phone #
-                            th Website
+                            th DONATE!
                     tbody
                     each item in orgs
                         tr
-                            td= item.name
+                            td
+                                a(href="http://"+item.website)
+                                    = item.name
                             td= item.description
                             td= item.handle
                             td= item.email
                             td= item.phone
                             td
-                                a(href=item.website)
-                                    = item.website
+                                a(href="/donate/?handle="+item.handle)
+                                    | Donate Now!
 
 
 

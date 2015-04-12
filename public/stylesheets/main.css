@@ -4,7 +4,6 @@ body {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-
 	font-family: 'Jura', sans-serif;
 }
 
@@ -99,10 +98,17 @@ p.black{
 	margin-left: 60px;
 	opacity: 1;
 }
+a:link {
+    color: blue;
+}
 
+a:visited {
+    color: blue;
+}
 .table {
-	background-color: rgba(190, 190, 190, 0.6);
+	background-color: rgba(190, 190, 190, 0.8);
 	color: black;
+	font-size: 19px;
 }
 
 .container-fluid{

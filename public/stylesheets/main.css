@@ -30,6 +30,18 @@ h2 {
 	opacity: 0.8;
 }
 
+h5 {
+	color: #162B55;
+	text-align: center;
+	font-family: 'Jura', sans-serif;
+	font-weight: 600;
+	font-size: 60px;
+	margin-top: 330px;
+	margin-bottom: 10px;
+	position: center;
+	opacity: 0.8;
+}
+
 h3 {
 	color: black;
 	text-align: center;
@@ -48,6 +60,7 @@ h4 {
 	position: center;
 }
 
+
 p{
 	color: #FFF;
 	text-align: center;
@@ -63,14 +76,6 @@ p.black{
 	margin-right: 15px;
 }
 
-tbody {
-    /*display:inline-block;*/
-    /*overflow:auto;*/
-    /*height: 800px;*/
-    /*width: 100%;*/
-}
-
-
 .curved-border
 {
 	-moz-border-radius: 6px;
@@ -79,7 +84,16 @@ tbody {
 	border-color: rgba(190, 190, 190, 0.9);
 	border-style: solid;
 	width: 100%;
-	height: 300px
+	height: 200px;
+	margin-bottom: 30px;
+}
+
+.twitter-feed
+{
+	width: 100%;
+	height: 200px;
+	margin-left: 60px;
+	opacity: 1;
 }
 
 .table {

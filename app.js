@@ -3,11 +3,11 @@ var app = express();
 var config = require('./config.json');
 var orgs = require('./data/orgs.json')
 
-if (config.twitter.stream){
+/*if (config.twitter.stream){
   var stream = require('./controllers/twitter')();
 } else {
   console.log('Twitter not being run on server');
-}
+}*/
 
 // use jade as the view engine
 app.set('view engine', 'jade');

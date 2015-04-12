@@ -6,10 +6,10 @@
   "dependencies": {
     "bootstrap": "*",
     "braintree": "^1.23.0",
+    "cors": "^2.5.3",
     "express": "^4.12.3",
     "jade": "*",
     "lodash": "^3.6.0",
     "mandrill-api": "^1.0.41",
-    "twitter": "^1.2.5"
   }
 }

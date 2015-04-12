@@ -6,7 +6,7 @@ var stream = function(){
     var config = require('../config.json');
 
     var client = new Twitter({
-      consumer_key: 'ZGZbn8Ub3CLK5czKbJ95q2q0m ',
+      consumer_key: 'ZGZbn8Ub3CLK5czKbJ95q2q0m',
       consumer_secret: '7ak6OHpgNt9zCOY414fSDmYyQEyfiyagLSmBIkySsB6HPLVtbK',
       access_token_key: '3150658694-2atGSRb4hPi9AV8q06iOERWpcSf4h03EnZIzOXB',
       access_token_secret: '8Eghx1DJaIK978n3bVbM9qujhP2oas0lgEpl7vSheXxTz'
@@ -14,7 +14,7 @@ var stream = function(){
 
     console.log('Twitter initialized and listening');
 
-    client.stream('statuses/filter', {track: '#GiveWithGiveHub'}, function(stream) {
+    client.stream('statuses/filter', {track: '#GivingWithGiveHub'}, function(stream) {
         /* All data for our app */
       stream.on('data', function(app_tweet) {
           addToUI(app_tweet);
@@ -69,6 +69,7 @@ var stream = function(){
     }
 
     function tweetBack(userScreenName, orgHandle, amount){
+      if(!userScreenName || !orgHandle) return 1;
       var url = shortenURL(buildURL(orgHandle, amount));
       var status =  "Thanks for donating to @" + orgHandle + ", @" + userScreenName + ".  Please visit: " + url;
 

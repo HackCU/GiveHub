@@ -3,6 +3,6 @@
     "url" : "http://givehub.herokuapp.com"
   },
   "twitter" : {
-    "stream" : false
+    "stream" : true
   }
 }

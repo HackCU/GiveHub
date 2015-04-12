@@ -7,10 +7,10 @@ var stream = function(){
     var config = require('../config.json');
 
     var client = new Twitter({
-      consumer_key: 'sVfnQxrkS2tSLUXmFs1T8eWDO',
-      consumer_secret: 'w7rP7Ee1DDts9Q4Zg1I4LtxaltsHaCVNWSOPdycrKULz2m6lHk',
-      access_token_key: '3148870314-CpamGhp6bsONWRUw8RBREeMx0vo2NCZHXQhx0nr',
-      access_token_secret: 'gxMo7p8XSf3MbGoQTezSagY1Xm8aChNfken43oI7sfJFY'
+      consumer_key: 'ZGZbn8Ub3CLK5czKbJ95q2q0m ',
+      consumer_secret: '7ak6OHpgNt9zCOY414fSDmYyQEyfiyagLSmBIkySsB6HPLVtbK',
+      access_token_key: '3150658694-2atGSRb4hPi9AV8q06iOERWpcSf4h03EnZIzOXB',
+      access_token_secret: '8Eghx1DJaIK978n3bVbM9qujhP2oas0lgEpl7vSheXxTz'
     });
 
     console.log('Twitter initialized and listening');

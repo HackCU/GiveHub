@@ -16,28 +16,30 @@ block content
         div(class="container")
             h2 Featured Charities
             div(class="row")
-                div(class="col-md-7")
+                div(class="col-md-5 col-md-push-7 col-xs-12")
+                    div(class="twitter-feed")
+                        a(class="twitter-timeline",href="https://twitter.com/hashtag/GivingWithGiveHub",data-widget-id="587056023506026496") #GivingWithGiveHub Tweets
+                        script !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                div(class="col-md-7 col-md-pull-5 col-xs-12")
                     div(class="curved-border")
                         img(src="/images/charity1.jpg",alt="#obeyTheVADG",style="float:left; margin: 10px 15px 15px 10px; height: 100px; width: 100px;")
                         h3 World Wide Fund
                         p.black "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                div(class="col-md-5")
-                    div(class="twitter-feed")
-                        a(class="twitter-timeline",href="https://twitter.com/hashtag/GivingWithGiveHub",data-widget-id="587056023506026496") #GivingWithGiveHub Tweets
-                        script !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
             div(class="row")
-                div(class="col-md-7") 
+                div(class="col-md-7 col-xs-12") 
                     div(class="curved-border")
                         img(src="/images/charity2.png",alt="#obeyTheVADG",style="float:left; margin: 10px 15px 15px 10px; height: 100px; width: 100px;")
                         h3 The Salvation Army
                         p.black "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             div(class="row")
-                div(class="col-md-7") 
+                div(class="col-md-7 col-xs-12") 
                     div(class="curved-border")
                         img(src="/images/charity3.jpg",alt="#obeyTheVADG",style="float:left; margin: 10px 15px 15px 10px; height: 100px; width: 100px;")
                         h3 Cancer United
                         p.black "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                h5 Organizations
+
+            h5 Organizations
+            h4 Explore our current causes, and donate by tweeting a $ amount with #GivingWithGiveHub, and an organization's @TwitterHandle. Or click "Donate Now" below.
 
     div(class="container-fluid organization-list")
         div(style="overflow: hidden")
@@ -46,10 +48,10 @@ block content
                     thead
                         tr
                             th Name 
-                            th Description
-                            th Twitter Handle
-                            th Email
-                            th Phone #
+                            th.no-mobile Description
+                            th.no-mobile Twitter Handle
+                            th.no-mobile Email
+                            th.no-mobile Phone #
                             th DONATE!
                     tbody
                     each item in orgs
@@ -57,10 +59,10 @@ block content
                             td
                                 a(href="http://"+item.website)
                                     = item.name
-                            td= item.description
-                            td= item.handle
-                            td= item.email
-                            td= item.phone
+                            td.no-mobile= item.description
+                            td.no-mobile= item.handle
+                            td.no-mobile= item.email
+                            td.no-mobile= item.phone
                             td
                                 a(href="/donate/?handle="+item.handle)
                                     | Donate Now!

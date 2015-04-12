@@ -3,16 +3,16 @@ extends layout.jade
 block content
     - organization ? true : organization = '';
     h2#header="Donate to @" + organization
-    form(id="checkout", method="post", action="/checkout")
-        div(id="dropin")
-        if !amount
-            div(class="row")
-                div(class="col-md-4 col-md-offset-4")
-                    input(id="amount" type="text" , class = "form-control input-orgForm" , placeholder = "Amount")
-        - var amt = amount; if (!amt) amt = '';
-        div(class="row")
-            div(class="col-md-4 col-md-offset-4")
-                button(type="submit",class="btn btn-default btn-lg btn-block outline")= "Donate " + amt
+    div(class="container payment-shift")
+        div(class="col-md-3 col-md-offset-4")
+            form(id="checkout", method="post", action="/checkout")
+                div(id="dropin")
+                if !amount
+                    div(class="row")
+                        input(id="amount" type="text" , class = "form-control input-orgForm" , placeholder = "Amount")
+                    - var amt = amount; if (!amt) amt = '';
+                    div(class="row")
+                        button(type="submit",class="btn btn-orgForm btn-lg btn-block outline")= "Donate " + amt
 
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js")
     script(src="https://js.braintreegateway.com/v2/braintree.js")

@@ -1,12 +1,42 @@
 [
-    {
-        "name": "Dawson Needs A New Corvette",
-        "description": "A shitty charity.",
-        "handle": "testhandle929",
-        "email": "testhandle929@coloraodo.edu",
-        "phone": "9705328352",
-        "website": "shittycharity.com",
-        "account": "qkwjehg",
-        "routing": "dskjld"
-    }
+  {
+    "name": "World Wide Fund for Nature",
+    "description": "Building a harmonious future with nature.",
+    "handle": "WWF",
+    "email": "wwf@wwf.panda.org",
+    "phone": "9707132652",
+    "website": "wwf.panda.org",
+    "account": "adskjgh",
+    "routing": "dqklwjg"
+  },
+  {
+    "name": "The Salvation Army",
+    "description": "Helping those in need.",
+    "handle": "SalvationArmyUS",
+    "email": "salvo@salar.my",
+    "phone": "9705328352",
+    "website": "shittycharity.com",
+    "account": "qkwjehg",
+    "routing": "dskjld"
+  },
+  {
+    "name": "American Red Cross",
+    "description": "Helping those with health needs.",
+    "handle": "RedCross",
+    "email": "rdcrss@rdcrss.com",
+    "phone": "9705328352",
+    "website": "rdcrss.com",
+    "account": "qkwjehg",
+    "routing": "dskjld"
+  },
+  {
+    "name": "Fight Breast Cancer",
+    "description": "Helping combat the maladies of breast cancer.",
+    "handle": "raceforthecure",
+    "email": "",
+    "phone": "",
+    "website": "",
+    "account": "qkwjehg",
+    "routing": "dskjld"
+  }
 ]

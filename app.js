@@ -1,5 +1,4 @@
 var express = require('express');
-var bodyParser = require('body-parser');
 var app = express();
 var config = require('./config.json');
 var orgs = require('./data/orgs.json');
@@ -14,7 +13,6 @@ app.set('view engine', 'jade');
 
 // set where the static contents are (e.g., css, js)
 app.use(express.static(__dirname + '/public'));
-app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
   res.render('index.jade', {

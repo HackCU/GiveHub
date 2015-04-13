@@ -19,9 +19,9 @@ Simplicity of donation - remembering users/confirming transactions through weara
 
 ## Information
 ### Authors
-* [Adrian Chen](github.com/adrian-chen)
-* [Michael Kauzmann](github.com/zepumph)
-* [Brian Newsom](github.com/BrianNewsom)
+* [Adrian Chen](https://github.com/adrian-chen)
+* [Michael Kauzmann](https://github.com/zepumph)
+* [Brian Newsom](https://github.com/BrianNewsom)
 
 ### Created For
 HackCU 2015 in Boulder, Colorado.

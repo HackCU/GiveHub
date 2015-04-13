@@ -12,7 +12,8 @@ block content
                         input(id="amount" type="text" , class = "form-control input-orgForm" , placeholder = "Amount")
                 - amt = amount; if (!amt) amt = '';
                 div(class="row")
-                    button(type="submit",class="btn btn-orgForm btn-lg btn-block outline")= "Donate " + amt
+                    button(type="submit",class="btn btn-orgForm btn-lg btn-block outline no-margin-below", disabled)= "Donate " + amt
+                    p Donation coming soon.  We must first set a few things up with the charity.  Sorry for any inconvenience.
 
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js")
     script(src="https://js.braintreegateway.com/v2/braintree.js")

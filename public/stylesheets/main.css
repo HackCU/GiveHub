@@ -244,6 +244,10 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 }
 
+.no-margin-below {
+  margin-bottom: 10px;
+}
+
 /*
 
 # sourceMappingURL=main.css.map 

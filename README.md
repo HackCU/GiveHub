@@ -16,3 +16,14 @@ Example: Thanks @RedCross for all you do - I am #GivingWithGiveHub an amount of 
 
 ## What's next for GiveHub
 Simplicity of donation - remembering users/confirming transactions through wearables.  Forming a strong social media presence and growing with charities.
+
+## Information
+### Authors
+* [Adrian Chen](github.com/adrian-chen)
+* [Michael Kauzmann](github.com/zepumph)
+* [Brian Newsom](github.com/BrianNewsom)
+
+### Created For
+HackCU 2015 in Boulder, Colorado.
+### Contact Us At
+Brian.Newsom (AT) Colorado.edu

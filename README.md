@@ -1,7 +1,7 @@
 # GiveHub
 
 Donate money to the causes you care about with a Twitter status.
-
+![GiveHub Homepage](http://i.imgur.com/UXHwHT6.jpg)
 See it live at [http://givehub.herokuapp.com](http://givehub.herokuapp.com)
 
 ## Inspiration
@@ -12,6 +12,7 @@ Tweet @ a charity signed up with us using a dollar amount and #GivingWithGiveHub
 We will perform natural language processing on your tweet and will tweet you a URL to donate directly to the organization.
 
 Example: Thanks @RedCross for all you do - I am #GivingWithGiveHub an amount of $27.
+![GiveHub Example Tweet](http://i.imgur.com/VSZzMv4.png)
 
 ## What's next for GiveHub
 Simplicity of donation - remembering users/confirming transactions through wearables.  Forming a strong social media presence and growing with charities.

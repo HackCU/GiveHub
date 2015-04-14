@@ -20,10 +20,6 @@ app.get('/', function (req, res) {
   })
 });
 
-app.get('/createOrganization', function(req, res){
-  res.render('createOrg.jade');
-});
-
 app.get('/donate', function(req, res){
   res.render('donate.jade',
     {
@@ -31,18 +27,6 @@ app.get('/donate', function(req, res){
       "amount" : req.query.amount
     }
   );
-});
-
-app.get('/sendEmail', function(req, res){
-    var email = require('./controllers/mandrill')(req, res);
-})
-
-
-
-app.post('/newOrganization', function(req, res){
-  //var name = req.body.name;
-  console.log(req.body);
-  res.redirect('/');
 });
 
 app.set('port', (process.env.PORT || 3000))

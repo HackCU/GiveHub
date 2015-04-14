@@ -1,5 +1,15 @@
 [
   {
+    "name": "Joe Sixpac Reynolds Needs a Heart Transplant",
+    "description": "I've been struggling with disease for years.  Now is finally the time I can be helped, but I need to raise $500,000 to do so.  Thank you for your help.",
+    "handle": "zepumph",
+    "email": "zepumph@gmail.com",
+    "phone": "",
+    "website": "givehub.herokuapp.com",
+    "account": "asenad",
+    "routing": "asdkjasjd"
+  },
+  {
     "name": "World Wide Fund for Nature",
     "description": "Building a harmonious future with nature.",
     "handle": "WWF",
@@ -15,7 +25,7 @@
     "handle": "SalvationArmyUS",
     "email": "salvo@salar.my",
     "phone": "9705328352",
-    "website": "shittycharity.com",
+    "website": "www.salvationarmyusa.org/",
     "account": "qkwjehg",
     "routing": "dskjld"
   },
@@ -25,7 +35,7 @@
     "handle": "RedCross",
     "email": "rdcrss@rdcrss.com",
     "phone": "9705328352",
-    "website": "rdcrss.com",
+    "website": "redcross.org",
     "account": "qkwjehg",
     "routing": "dskjld"
   },
@@ -35,7 +45,7 @@
     "handle": "raceforthecure",
     "email": "",
     "phone": "",
-    "website": "",
+    "website": "apps.komen.org/raceforthecure",
     "account": "qkwjehg",
     "routing": "dskjld"
   }
